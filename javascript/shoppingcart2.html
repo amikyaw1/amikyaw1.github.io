@@ -40,7 +40,6 @@
             <tr>
             <td>${i++}</td> <td>${itemName}</td> <td>${unitPrice}</td>
             <td>${quantity}</td> <td>${subtotal}</td>
-
             </tr> `;
             document.getElementById("mydata").innerHTML=html;
 
@@ -49,9 +48,21 @@
              document.getElementById("quantity").value='';
 
             document.getElementById("mydata").innerHTML += `
-            <tr> <td colspan="4">Total</td> <td>${total}</td> </tr>`;
-                         
-             }
+            <tr> <td colspan="4">Total</td> <td>${total}</td> </tr>
+            `;    
+            if(total>=10000){
+                let discount= total * 0.1 ;  //total/10
+                let grand_total = total - discount ;
+
+                document.getElementById("mydata").innerHTML += `
+            <tr> <td colspan="4">Discount</td> <td>${discount}</td> </tr>
+            `;    
+              
+                document.getElementById("mydata").innerHTML += `
+            <tr> <td colspan="4">Grand Total</td> <td>${grand_total}</td> </tr>
+            `;          
+            }
+         }
      </script>
 </body>
 </html>
