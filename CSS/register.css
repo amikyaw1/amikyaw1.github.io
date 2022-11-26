@@ -1,0 +1,65 @@
+#header{
+    text-align: center;
+
+}
+#body{
+    background-color: skyblue;
+}
+form{
+    width: 50%;
+    margin: auto;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="date"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus,input[type="date"]:focus{
+    border: 4px solid gray;
+}
+input[type="radio"]:checked+label{
+    color: red;
+}
+input[type="checkbox"]:enabled+label{
+    color: yellow;
+    font-style: italic;
+}
+input[type="checkbox"]:checked+label{
+    color: red;
+    font-style: normal;
+}
+input[type="checkbox"]:disabled+label{
+    color: gray;
+}
+#address{
+    width: 100%;
+    height: 100px;
+    outline: none;
+}
+li:first-child{
+    background-color: green;
+}
+li:last-child{
+    background-color: red;
+}
+li:nth-child(5){
+    background-color: yellow;
+}
+:empty{
+    background-color: darkgray;
+    height: 20px;
+}
+.thanku{
+    text-align: center;
+}
+.button{
+    text-align: right;
+}
+.button button{
+    width: 100px;
+    height: 40px;
+}
+.button button:hover{
+    background-color: gray;
+    color: white;
+}

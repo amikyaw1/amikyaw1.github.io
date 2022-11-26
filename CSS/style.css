@@ -1,0 +1,227 @@
+h1{
+    /* color: red; */
+    /* color: #f00; */
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Universal selector */ 
+/* *{
+    color: red; 
+
+
+} 
+*/
+/* Tag selector / element selector */
+h3{
+    color: green;
+    
+}
+
+/* attribute selector */
+a[title="google"]{
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+/* id selector */
+#idselector{
+    text-indent: 40px;
+    font-size: 20px;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+/* class selector */
+.classselector{
+    color: brown;
+    letter-spacing: 2px;
+}
+
+/* Descendent Selector */
+#desc a{
+    color: purple;
+}
+
+/* child selector */
+#child > a{
+    color: purple;
+}
+
+/* Pseudo Selector */
+.pseudo:link{
+    text-decoration: none;
+}
+.pseudo:hover{
+    text-decoration: underline;
+    color: red;
+}
+.pseudo:active{
+    color: green;
+}
+.pseudo:visited{
+    color: yellow;
+}
+
+/* Target */
+p:target{
+    border: 1px solid red;
+    color:green;
+}
+
+/* border */
+.borderone{
+    border: 5px dotted red;
+}
+.bordertwo{
+    border-top: 10px double green;
+    border-bottom: 10px double red;
+}
+.borderstyle{
+    border-style: solid;
+}
+.borderstylemix{
+    /* border-style: solid ; //  all four side */
+    /* border-style: solid dotted;  // t&b  l&r */
+    /* border-style: solid dashed double;  // top  left&right  bottom */
+    border-style: double solid dashed dotted; /* top right bottom left*/
+}
+.borderwidth{
+    border-width: 5px 3px 5px 3px;
+    border-style: solid;
+    border-color: brown;
+}
+
+/*margin*/
+.marginone{   
+    /*margin: 50px;*/
+    /*all four side*/
+    margin: 100px 50px;
+    /* T&B /  L&R*/
+    border: 2px solid red;
+}
+
+.margintwo{
+    margin-top: 50px;
+    border: 2px solid green;
+}
+
+/*padding*/
+.padding{
+    /* padding:50px 100px 20px 150px;  */
+    padding-top: 100px;
+    border: 2px solid black;
+}
+
+/*Layout*/
+.inline{
+    border: 1px solid red;
+    width: 400px;
+    display: inline-block;  
+}
+.block{
+    border: 1px solid peru;
+    width: 400px;
+    display: inline-block;
+}
+/*Float*/
+.float_left img{
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.float_right img{
+    width: 40%;
+    float: right;
+}
+
+/* grid */
+.gridone div,.gridtwo div,.gridthree div,.gridfour div{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.gridone,.gridtwo,.gridthree,.gridfour{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridtwo{
+    grid-column-gap: 30px; /* နေရာခြား */
+    grid-row-gap: 50px;
+   /* grid-gap: 40px; */
+}
+
+.rowadd{
+     grid-row-start: 1;  /*မျဥ◌်းကြောင်းအတိုင်းရေ */
+    grid-row-end: 3;
+}
+
+.colunmadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* position */
+.relative_parent{
+  border: 1px solid purple;
+  width: 1000px;
+  height: 400px;
+}
+
+.relative{
+  border: 1px solid orangered;
+  width: 300px;
+  height: 200px;
+  position: relative;  /* htmlကနေ နေရာချပေး */
+  top: 100px;
+  left: 200px;
+}
+
+.absolute_parent{
+    border: 1px solid teal;
+    width: 1000px;
+    height: 400px;
+    position: relative;  /* documentကနေချမပေးအောင် relative ကြေငြာ */
+}
+.absolute{
+    border: 1px solid violet;  /*documentကနေစပီး နေရာချ */
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.fixed{
+    position: fixed;   /*documentကနေစပီး နေရာချ /  သတ်မှတ်နေရာကနေမရွေ့ */
+    top: 100px;
+    right: 100px;
+}
+
+/* Font  */
+.online{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+} 
+
+@font-face {    /* down ပီးလုပ်တာ */
+font-family: lobster;
+src: url(Lobster/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat-BlackItalic;
+    src: url(Montserrat/static/Montserrat-BlackItalic.ttf);
+}
+.offline{   
+    font-family: lobster;
+}
+
+.offlinetwo{
+    font-family: montserrat-BlackItalic;
+}

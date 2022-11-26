@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array</title>
+</head>
+<body>
+       <h3>JS Array</h3>
+
+       <h4>Student registration</h4>
+       Name: <input type="text"  id="name"><br>
+       Age : <input type="number"  id="age"><br>
+       City: <input type="text" id="city"><br>
+       <button onclick="addStudent()">Register</button>
+
+       <h4>Student List</h4>
+       <table border="1px" cellpadding="10px">
+           <thead>
+               <tr>
+                   <th>No.</th>
+                   <th>Name.</th>
+                   <th>Age</th>
+                   <th>City</th>
+               </tr>
+           </thead>
+           <tbody id="mydata">
+
+           </tbody>
+       </table>
+       <script>
+
+          let myStudentList=[];
+          function addStudent(){
+            //get data from form:
+            let name=document.getElementById("name").value;
+            let age=document.getElementById("age").value;
+            let city=document.getElementById("city").value;
+            //add to array
+            let student={
+                name : name ,
+                age : age ,
+                city :city 
+            }
+            myStudentList.push(student);
+            //show data
+           // console.log(myStudentList);
+          showData();
+        }
+          function showData(){
+            let html='';
+                for(var i=0; i<myStudentList.length; i++){  //loop in array
+                   // console.log(studentList[i]);   //studentlist[0][1][2]
+                   let student=myStudentList[i];
+                 //  console.log(student.name,student.age,student.city);
+                 html += `<tr>
+                    <td>${i+1}</td> <td>${student.name}</td> <td>${student.age}</td> 
+                    <td>${student.city}</td>
+                    </tr>`;
+                }
+                document.getElementById("mydata").innerHTML=html;
+          }
+                //array[]
+                let students=['Mg Mg','Aye Aye','Moe Moe','Ko Ko','Mi Mi'];
+                console.log(students)
+                console.log(students[0]) //index=0
+                console.log(students[1])  //index=1
+                let fruits=[];
+                //push array ထဲကို data ထည့်
+                fruits.push("Banana");
+                fruits.push("Apple");
+                fruits.push("Mango");
+                console.log(fruits)
+                console.log(fruits.pop())  //နောက်ဆုံးတစ်ခန်းကို ြဖတ်ထုတ်
+                console.log(fruits)
+                  
+                //string functions
+                let greeting = "Hello Bootcampers!";
+                console.log(greeting.length)   //18
+                console.log(greeting.indexOf('damp')) //ရှာလိုသည့် စာလုံးရဲ့နေရာ index ကိုပြ
+                console.log(greeting.charAt(0)); //အခန်း နံပါတ်နဲ့ ြပန်ရှာ
+                //object array
+                let student1={
+                    name :'Mg Mg',
+                    age : 23,
+                    city :'Mandalay',
+
+                };
+                let student2={
+                    name :'Aye Aye',
+                    age : 22,
+                    city :'Yangon',
+
+                };
+                let student3={
+                    name :'Ko Ko',
+                    age : 20,
+                    city :'Monywa',
+
+                };
+              
+       </script>
+
+       
+</body>
+</html>

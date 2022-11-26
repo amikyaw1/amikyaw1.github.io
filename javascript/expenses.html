@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Form</title>
+</head>
+<body>
+    <h1>Expense Form</h1>
+    Date: <input type="date" id="date"> <br>
+    Name: <input type="text"  id="name"> <br>
+    Amount: <input type="number"  id="amount"> <br>
+    <button onclick="addExpense()">Add Expense</button>
+
+    <h3>Expense List</h3>
+    <table border="1px" cellpadding="10">
+        <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                </tr>
+        </thead>
+        <tbody id="mydata">
+              
+        </tbody>
+        
+    </table>
+    <script>
+        let myExpenseList=[];
+          function addExpense(){
+              let date=document.getElementById("date").value;
+              let name=document.getElementById("name").value;
+              let amount=parseInt( document.getElementById("amount").value);
+              
+              let expense={
+                date : date,
+                name : name,
+                amount : amount
+              };
+              myExpenseList.push(expense);
+             // console.log(myExpenseList);
+            showData();
+          }
+            function showData(){
+                let html='';
+                var total=0;
+                for(var i=0; i<=myExpenseList.length; i++){
+                    let expense=myExpenseList[i];
+                    total=total+amount;
+                html += `<tr>
+                    <td>${i+1}</td> <td>${expense.date}</td> <td>${expense.name}</td> <td>A${expense.amount}</td>
+                    </tr>
+                    <tr> <td colspan="4">Total</td> <td>${total}</td> </tr>
+                    `;
+                }
+                document.getElementById("mydata").innerHTML=html;
+            }
+
+    </script>
+</body>
+</html>

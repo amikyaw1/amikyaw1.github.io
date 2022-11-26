@@ -1,0 +1,919 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto-italic;  
+}
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(Roboto-Italic.ttf);
+}
+.navbar ul{
+    float:right ;
+    margin-top: 7px;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 0px 25px;
+}
+.nav_brand{
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+.navbar{
+    padding: 20px;
+    font-family: Roboto-MediumItalic;
+    box-shadow: -5px 0px  10px rgba(15, 15, 15, 0.15);
+}
+.nav_brand a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #60b3c5;
+   
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color: #60b3c5;
+    letter-spacing: 5px;
+    transition-duration: .7s;
+}
+.cart_noti{
+    position:relative;
+    bottom: 15px;
+    background-color: black;
+    color: white;
+    width: 15px;
+    text-align: center;
+    left: -5px;
+    border-radius: 50%;
+}
+/* end nav */
+
+/* bunner */
+.bunner_image{
+    width: 100%;
+    margin-top: 5px;
+}
+.bunner_text{
+    position: absolute;
+    top: 250px; 
+    left: 100px;   
+}
+.shop_now{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+.shop_now:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.bunner_header{
+    margin-bottom: 10px;
+}
+/* end bunner */
+
+/* category */
+.category_title{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+
+.category .center a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.category{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.category .center a:hover{
+    background-color: #60b3c5;
+    color: white;
+    border: 1px solid #60b3c5;
+}
+
+/* product */
+ /*  .product_header{
+    border-left: 4px solid #60b3c5;
+    padding-left: 35px;
+    margin-left: 10px;
+}
+
+.parent div{
+   
+    margin-top: 10px;
+    text-align: center;
+}
+.parent{
+    display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   margin-left: 10px;
+}
+.text{
+    padding: 7px;
+}
+.product_img{
+    display: block;
+    padding-left:40px;
+}
+
+
+.parent div:hover{
+    border-radius: 20px;
+    border: 1px solid aliceblue;
+    background-color:aliceblue;
+    cursor: pointer;
+}
+*/
+/* arrival */
+.title{
+    border-left: 4px solid #60b3c5;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding-left: 30px;
+}
+.new_arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    margin: 0 60px;
+    grid-row-gap: 10px;
+}
+.new_arrival p{
+   text-align: center;
+}
+
+/* Our Blog */
+.blog{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.blog_image{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    transition-duration: 1s;
+}
+.calender{
+    color: #60b3c5;
+    padding-left: 15px;
+}
+.readmore{
+    text-decoration: none;
+    color: #60b3c5;
+    padding-left: 15px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    display: inline-block;
+}
+.blog div{
+    box-shadow: -5px 10px 10px rgba(183, 179, 179, 0.15);
+}
+.blog div h3{
+    padding: 0px 15px;
+    text-align: justify;
+}
+.image_zoom{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+}
+.blog_image:hover{
+    transform: scale(1.3);
+}
+ /* end blog */
+ /* start available */
+
+ .available_image{
+    display: inline-block;
+    background-image: url(../images/iphone12pro.png);
+    height: 200px;   
+    width: 190px;
+    /* z-index: 1; */    /* ပုံအပေါ်ကပေါ်နေအောင်လုပ် */
+    
+ }
+
+ .available_image:hover{
+    background-image: url(../images/iphone13.png);
+    /* z-index: 2; */
+ }
+
+ .more_item a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #60b3c5;
+ }
+
+ .more_item{
+    text-align: center;
+    margin-top: 40px;
+ }
+ /* start support */
+
+ .support {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 70px;
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+ }
+
+ .support div p{
+    display: inline-block;
+    padding-left: 20px;
+ }
+ .support div p span{
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+ }
+ /* end support */
+  
+ /* start footer */
+ .footer{
+    background-color: black;
+    padding-top: 40px;
+ }
+ .footer .center a{
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    margin: 20px 15px;
+ }
+ .designed_by{
+    color: gray;
+    text-align: center;
+ }
+ .footer_icon{
+    color: gray;
+    padding: 10px 0px 40px;
+    text-align: center;
+}
+
+
+
+ /* Product Page */
+
+ .page_title{
+    margin: 20px;
+    padding: 15px;
+    border-top: 1px  solid rgb(243, 235, 235);
+    border-bottom:  1px  solid rgb(243, 235, 235);
+    color: #60b3c5;
+ }
+ .page_title center h3 {
+    font-size: 20px;
+    padding-top: 20px;
+ }
+ .page_title center a{
+   text-decoration: none;
+   color: #60b3c5;
+ }
+
+.container {
+    display: inline-block;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+   
+}
+.logo{
+   width: 20px;
+   height: 20px;
+}
+
+ .list_container {
+
+   width: 250px;
+   height: 400px;
+    margin: 10px 50px;
+    /* text-align: center; */
+    border: 2px solid #60b3c5;
+    padding: 10px;
+    border-radius: 20px;
+ }
+ .brand_title{
+    /* font-size: 30px; */
+    background-color: #60b3c5;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+ }
+.product_list {
+    list-style-type: none;
+    
+ }
+.list_item a{
+    text-decoration: none;
+    color: #60b3c5;
+}
+.list_item{
+    margin: 20px;
+    font-size: 22px;
+    padding-left: 20px;
+    
+}
+
+.list_item a:hover{
+    border: 1px solid #60b3c5;
+    border-radius: 5px;
+    background-color: #60b3c5;
+    padding: 5px 10px;
+    color: white;
+}
+.product_item {
+    display: inline-block;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 5px;
+    text-align: center;
+    margin: 0px 50px; 
+}
+.product_item div{
+    border-bottom:1px solid #60b3c5;
+}
+
+.product_item p {
+    padding-bottom: 10px;
+    text-align: center;
+}
+.product_item div:hover{ 
+    transform: scale(1.1);
+    border-radius: 5px ;
+    box-shadow: 5px -10px 10px rgb(233, 231, 231,0.5); 
+    
+}
+
+/* phone image */
+
+.apple1{
+    display: inline-block;
+    background-image: url(../images/iphone14promaxdeeppurple1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+
+ .apple1:hover{
+    background-image: url(../images/iphone14promaxdeeppurple11.jpg);
+ }
+ .apple2{
+    display: inline-block;
+    background-image: url(../images/iphone14prospaceblack1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+
+ .apple2:hover{
+    background-image: url(../images/iphone14prospaceblack11.jpg);
+ }
+ .apple3{
+    display: inline-block;
+    background-image: url(../images/iphone14blue1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+
+ .apple3:hover{
+    background-image: url(../images/iphone14blue11.jpg);
+ }
+ .apple4{
+    display: inline-block;
+    background-image: url(../images/iphone14midnight1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+
+ .apple4:hover{
+    background-image: url(../images/iphone14midnight11.jpg);
+ }
+ .apple5{
+    display: inline-block;
+    background-image: url(../images/iphone14progold1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+
+ .apple5:hover{
+    background-image: url(../images/iphone14progold11.jpg);
+ }
+
+
+ /* huawei page */
+ .huawei1{
+    display: inline-block;
+    background-image: url(../images/huaweinova8iblue1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.huawei1:hover{
+    background-image: url(../images/huaweinova8iblue11.jpg);
+ }
+
+ .huawei2{
+    display: inline-block;
+    background-image: url(../images/huaweinova8imoonlightsilver1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.huawei2:hover{
+    background-image: url(../images/huaweinova8imoonlightsilver11.jpg);
+ }
+
+ .huawei3{
+    display: inline-block;
+    background-image: url(../images/huaweinova9sepearlwhite1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.huawei3:hover{
+    background-image: url(../images/huaweinova9sepearlwhite11.jpg);
+ }
+
+ .huawei4{
+    display: inline-block;
+    background-image: url(../images/huaweinova9starryblue1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.huawei4:hover{
+    background-image: url(../images/huaweinova9starryblue11.jpg);
+ }
+
+ .huawei5{
+    display: inline-block;
+    background-image: url(../images/huaweinovay901.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.huawei5:hover{
+    background-image: url(../images/huaweinovay9011.jpg);
+ }
+
+ .huawei6{
+    display: inline-block;
+    background-image: url(../images/huaweinovay90blue1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.huawei6:hover{
+    background-image: url(../images/huaweinovay90blue11.jpg);
+ }
+
+ /* oppo page */
+ .oppo1{
+    display: inline-block;
+    background-image: url(../images/oppoa7711.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.oppo1:hover{
+    background-image: url(../images/oppoa771.jpg);
+ }
+
+ .oppo2{
+    display: inline-block;
+    background-image: url(../images/oppoa77blue11.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.oppo2:hover{
+    background-image: url(../images/oppoa77blue1.jpg);
+ }
+ .oppo3{
+    display: inline-block;
+    background-image: url(../images/oppoa16kblack1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.oppo3:hover{
+    background-image: url(../images/oppoa16kblack11.jpg);
+ }
+ .oppo4{
+    display: inline-block;
+    background-image: url(../images/oppoa16kblue1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.oppo4:hover{
+    background-image: url(../images/oppoa16kblue11.jpg);
+ }
+ .oppo5{
+    display: inline-block;
+    background-image: url(../images/oppoa55starryblack1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.oppo5:hover{
+    background-image: url(../images/oppoa55starryblack11.jpg);
+ }
+ .oppo6{
+    display: inline-block;
+    background-image: url(../images/oppoa76black1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.oppo6:hover{
+    background-image: url(../images/oppoa76black11.jpg);
+ }
+ .oppo7{
+    display: inline-block;
+    background-image: url(../images/oppoa76blue1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.oppo7:hover{
+    background-image: url(../images/oppoa76blue11.jpg);
+ }
+
+ /* realme page */
+
+ .realme1{
+    display: inline-block;
+    background-image: url(../images/realme9iblack.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.realme1:hover{
+    background-image: url(../images/realme9iblack1.jpg);
+ }
+
+ .realme2{
+    display: inline-block;
+    background-image: url(../images/realme9iblue.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.realme2:hover{
+    background-image: url(../images/realme9iblue1.jpg);
+ }
+
+ .realme3{
+    display: inline-block;
+    background-image: url(../images/realmec11blue.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.realme3:hover{
+    background-image: url(../images/realmec11blue1.jpg);
+ }
+
+ .realme4{
+    display: inline-block;
+    background-image: url(../images/realmec30blue.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.realme4:hover{
+    background-image: url(../images/realmec30blue1.jpg);
+ }
+
+ .realme5{
+    display: inline-block;
+    background-image: url(../images/realmec35green.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.realme5:hover{
+    background-image: url(../images/realmec35green1.jpg);
+ }
+
+ /* samsung */
+ .samsung1{
+    display: inline-block;
+    background-image: url(../images/samsunggalaxya04scopper.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.samsung1:hover{
+    background-image: url(../images/samsunggalaxya04scopper1.jpg);
+ }
+ .samsung2{
+    display: inline-block;
+    background-image: url(../images/samsunggalaxya04sgreen.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.samsung2:hover{
+    background-image: url(../images/samsunggalaxya04sgreen1.jpg);
+ }
+ .samsung3{
+    display: inline-block;
+    background-image: url(../images/samsunggalaxys22burgundy.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.samsung3:hover{
+    background-image: url(../images/samsunggalaxys22burgundy1.jpg);
+ }
+ .samsung4{
+    display: inline-block;
+    background-image: url(../images/samsunggalaxys22lavander1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.samsung4:hover{
+    background-image: url(../images/samsunggalaxys22lavander11.jpg);
+ }
+ .samsung5{
+    display: inline-block;
+    background-image: url(../images/samsunggalaxyzfold4beige.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.samsung5:hover{
+    background-image: url(../images/samsunggalaxyzfold4beige1.jpg);
+ }
+ .samsung6{
+    display: inline-block;
+    background-image: url(../images/samsunggalaxyzfold4blue.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.samsung6:hover{
+    background-image: url(../images/samsunggalaxyzfold4blue1.jpg);
+ }
+ 
+ /* vivo page */
+ .vivo1{
+    display: inline-block;
+    background-image: url(../images/vivov251.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.vivo1:hover{
+    background-image: url(../images/vivov2511.jpg);
+ }
+ .vivo2{
+    display: inline-block;
+    background-image: url(../images/vivoy011.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.vivo2:hover{
+    background-image: url(../images/vivoy012.jpg);
+ }
+ .vivo3{
+    display: inline-block;
+    background-image: url(../images/vivoy01blue1.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.vivo3:hover{
+    background-image: url(../images/vivoy01blue11.jpg);
+ }
+ .vivo4{
+    display: inline-block;
+    background-image: url(../images/vivoy15cmysticblue.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.vivo4:hover{
+    background-image: url(../images/vivoy15cmysticblue1.jpg);
+ }
+ .vivo5{
+    display: inline-block;
+    background-image: url(../images/vivoy161.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.vivo5:hover{
+    background-image: url(../images/vivoy1611.jpg);
+ }
+ .vivo6{
+    display: inline-block;
+    background-image: url(../images/vivoy1sblack.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.vivo6:hover{
+    background-image: url(../images/vivoy1sblack1.jpg);
+ }
+
+ /* xiaomi page */
+ .xiaomi1{
+    display: inline-block;
+    background-image: url(../images/ximi11black.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.xiaomi1:hover{
+    background-image: url(../images/ximi11black1.jpg);
+ }
+ .xiaomi2{
+    display: inline-block;
+    background-image: url(../images/ximi11blue.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.xiaomi2:hover{
+    background-image: url(../images/ximi11blue1.jpg);
+ }
+ .xiaomi3{
+    display: inline-block;
+    background-image: url(../images/xiredmi10c11.jpg);
+    background-size: 220px;
+    height: 200px;   
+    width: 220px;
+ }
+.xiaomi3:hover{
+    background-image: url(../images/xiredmi10c1.jpg);
+ }
+ 
+/* about page */
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(Roboto-Regular.ttf);
+}
+.about_page{
+    background-color: #60b3c5;
+   
+}
+
+.about_page div p{
+    margin-left: 30px;
+    font-family: Roboto-Regular;
+    text-align:justify;
+    text-indent: 20px;
+    line-height: 35px;
+    word-spacing: 7px;
+    padding: 10px 0px;
+}
+.shop div img{
+    width: 100%;
+    height: 250px;
+}
+
+.shop div{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    float: right;
+    width: 400px;
+    margin-left: 30px;
+}
+.email {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.email a{
+   text-decoration: none;
+   padding: 20px;
+   color: black;
+}
+
+
+/* contact page */
+.contact_box {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #60b3c5;
+}
+.contact_header{
+    text-align: center;
+    margin: 20px;
+}
+.form{
+    margin: 20px;
+}
+
+input[type="text"],input[type="email"],input[type="number"]{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border-radius: 7px;
+} 
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus{
+    border: 1px solid black;
+}
+#your_message{
+    width: 80%;
+    height: 200px;
+    outline: none; 
+    border-radius: 7px;
+}
+#summit{
+    width: 110px;
+    height: 40px;
+}
+#summit:hover{
+    background-color: rgb(34, 31, 31);
+    color: white;
+}
+
+/* blog page */
+.blog_page_image{
+   width: 100%;
+   margin: 0px 40px;
+   height: 400px;
+   
+}
+.blog_text{
+   position: absolute;
+   top: 200px; 
+   right: 70px;   
+}
+.blog_text p{
+   font-size: 30px;
+   color: #60b3c5;
+}
+.blog_header{
+   font-size: 50px;
+   color: #60b3c5;
+}
+
+.blog_img{
+   width: 100%;
+}
+
+.blog div{
+   border-radius: 5px;
+} 
+.blog div h2,p{
+   text-align: justify;
+   padding: 10px 15px;
+}
+
+/* service page */
+.service{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   padding: 30px;
+}
+.service div p {
+   display: inline-block;
+   font-size: 20px;
+}
+.service div{
+   border-right: 2px solid #60b3c5;
+}
+.service div p span{
+   font-weight: bold;
+   display: block;
+   font-size: 30px;
+   padding-bottom: 10px;
+}
+.service_img{
+   width: 70px;
+   height: 70px;
+}
